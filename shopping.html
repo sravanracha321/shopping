@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Document</title>
+  
+    <style>
+          header {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+        }
+        .brand-title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .brand-menu {
+            font-size: 20px;
+        }
+        .brand-menu span {
+            margin-right: 20px;
+        }
+        .brand-icons {
+            font-size: 20px;
+        }
+        .brand-icons span {
+           margin-right: 20px;
+        }
+        .brand-offer {
+            background-color: black;
+            color:white;
+            padding: 5px;
+            text-align: center;
+        }
+        .brand-nav {
+            margin-top: 10px;
+            height: 450px;
+            display: grid;
+            margin-top: -5px;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+
+      marquee{
+        background-color:black;
+        color: white;
+     padding: 5px;
+
+       }
+
+       .women{
+    background-image: url("./images/21.webp");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0.6;
+}
+.women:hover{
+    opacity: 1;
+}
+
+.men{
+    background-image: url("./images/2.webp");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0.6;
+}
+.men:hover{
+    opacity: 1;
+}
+.men1{
+                      background-image: url("./images/23.avif");
+                  
+                  
+            background-size:cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            opacity: 0.6;
+            height: 350px;
+        
+
+   
+ 
+}
+.men1:hover{
+    opacity: 1;
+}
+.kids{
+    background-image: url("./images/kids2.webp");
+    background-size: cover;
+    text-align: center;
+
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0.6;
+}
+.kids:hover{
+    opacity: 1;
+}
+.banner-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.men  button{
+    width: 200px;
+    height: 45px;
+    background-color: white;
+}
+.women  button{
+    width: 200px;
+    height: 45px;
+    background-color: white;
+}
+.kids  button{
+    width: 200px;
+    height: 45px;
+    background-color: white;
+}
+h6{
+    text-align: center;
+
+}
+h2{
+    text-align: center;
+    font-family: Arial;
+
+}
+
+p{
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+
+}
+h1{
+    text-align: center;
+}
+
+
+.card{
+            width: 200px;
+          box-shadow: 2px 2px 2px 2px gray;
+            padding: 5px;
+            margin: 25px;
+
+        }
+        .card-img{
+            width: 100%;
+            height: 160px;
+
+        }
+        .card-header{
+            text-align: center;
+            height: 70px;
+
+
+        }
+      
+        .card-body{
+            text-align: center;
+            height: 90px;
+        }
+        .rating{
+            color: dark;
+            margin-bottom: 10px;
+        }
+        .container{
+            display: grid;
+
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+             text-align: center;
+             justify-content: center;
+           
+        }
+        .container1{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+        }
+             
+        .fun{
+     width: 225px;
+    height: 35px;
+    background-color: white;
+
+}
+
+
+   
+footer{
+    display:grid;
+    grid-template-columns:3fr 2.25fr 2.25fr 2.25fr 2.25fr;
+    font-family:Arial;
+    background-color:black;
+    color:white;
+    padding:10px;
+    font-size:16px;
+}
+.social-bar{
+    margin-top:20px;
+}
+.social-bar span{
+    margin-right:10px;
+}
+.footer-title{
+    font-weight:blod;
+    margin-bottom:20px;
+}
+.footer-title~div{
+    margin-bottom:10px;
+}
+.brand-footer{
+    font-size:30px;
+    font-weight:bold;
+}
+.section-socialbar{
+    color:black;
+    font-size:25px;
+    position:fixed;
+    right:10px;
+    bottom:5px;
+    background-color: green;
+    padding:3px;
+}
+.section-socialbar div{
+    margin-bottom:10px;
+}
+
+
+    </style>
+</head>
+<body class="contianer-fluid">
+    <header class="container-fluid fixed-top">
+        <div class="brand-title">
+            Shopping
+        </div>
+        <div class="brand-menu">
+            <span>Home</span>
+            <span>Catlog</span>
+            <span>Shop</span>
+            <span>Blog</span>
+            <span>Pages</span>
+            <span>Docs</span>
+        </div>
+        <div class="brand-icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+        </div>
+    </header>
+
+      <div class="brand-offer">
+    <span class="bi bi-lightning-fill text-warning"></span>
+    HAPPY HOLIDAY DEALS ON EVERYTHING
+    <span class="bi bi-lightning-fill text-warning"></span>
+  </div>
+     <div className="container-fluid">
+        <div class="carousel slide"id="banner"data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active"data-bs-interval="1500">
+                           <img src=".\images\2.webp"class="w-100 d-block"width="1700"height="500">
+                       
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\3.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\5.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\6.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\8.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\9.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\11.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\12.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\14.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\15.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\17.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+                <div class="carousel-item"data-bs-interval="1500">
+                    <img src=".\images\21.webp"class="w-100 d-block"width="1700"height="500">
+                </div>
+            </div>
+            <button data-bs-slide="prev"data-bs-target="#banner"class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-slide="next"data-bs-target="#banner"class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button class="active"data-bs-slide-to="0"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="1"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="2"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="3"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="4"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="5"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="6"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="7"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="8"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="9"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="10"data-bs-target="#banner"></button>
+                <button data-bs-slide-to="11"data-bs-target="#banner"></button>
+               
+    
+    
+            </div>
+        </div>
+        </div>
+     <section>
+            <marquee>Shopping is an activity in which a customer browses the available goods or services presented by one or more retailers with the potential intent to purchase a suitable selection of them</marquee>
+               </section>
+
+                 <div class="brand-nav">
+            <div class="women">
+                <div class="banner-title">
+                    Women
+                </div>
+                <div>
+                    <button>Shop Women<span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+            <div class="men">
+                <div class="banner-title">
+                    Men
+                </div>
+                <div>
+                    <button>Shop Women<span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+            <div class="kids">
+                <div class="banner-title">
+                    Kids
+                </div>
+                <div>
+                    <button>Shop Women<span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+
+         </div>  
+         <hr>
+         <div>
+            <h6>NEW COTTOIN</h6>
+            <h2>Best Price 2025</h2>
+            <p>Appears,dry there darkness they're seas dry waters thing fly midst.Beast,above fly brought Very Green</p>
+         </div>
+      
+       
+         </div>
+         <!--Designcards-->
+         <div class="container">
+            <div class="card">
+        
+            <img src=".\images\2.webp"class="card-img">
+            <div class="card-header">
+                <p>Mens Fashion</p>
+            
+            </div>   
+            <div class="card-body">
+           <div class="rating">
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+           </div>
+           <a button class="btn btn-dark"href=".\welcome.html">View Details</a></button>
+            </div>
+         </div>
+         <div class="card">
+        
+            <img src=".\images\29.webp"class="card-img">
+            <div class="card-header">
+                <p>Mens Fashion</p>
+            
+            </div>   
+            <div class="card-body">
+           <div class="rating">
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+           </div>
+                <a button class="btn btn-dark"href=".\welcome.html">View Details</a></button>
+            </div>
+         </div>
+         <div class="card">
+        
+            <img src=".\images\6.webp"class="card-img">
+            <div class="card-header">
+                <p>Mens Fashion</p>
+            
+            </div>   
+            <div class="card-body">
+           <div class="rating">
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+           </div>
+            <a button class="btn btn-dark"href=".\welcome.html">View Details</a></button>
+            </div>
+         </div>
+         <div class="card">
+        
+            <img src=".\images\8.webp"class="card-img">
+            <div class="card-header">
+                <p>Mens Fashion</p>
+            
+            </div>   
+            <div class="card-body">
+           <div class="rating">
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+           </div>
+          <a button class="btn btn-dark"href=".\welcome.html">View Details</a></button>
+            </div>
+         </div>
+         <div class="card">
+        
+            <img src=".\images\5.webp"class="card-img">
+            <div class="card-header">
+                <p>Womens Fashion</p>
+            
+            </div>   
+            <div class="card-body">
+           <div class="rating">
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+           </div>
+             <a button class="btn btn-dark"href=".\welcome.html">View Details</a></button>
+            </div>
+         </div>
+         <div class="card">
+        
+            <img src=".\images\3.webp"class="card-img">
+            <div class="card-header">
+                <p>Womens Fashion</p>
+            
+            </div>   
+            <div class="card-body">
+           <div class="rating">
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+           </div>
+    <a button class="btn btn-dark"href=".\welcome.html">View Details</a></button>
+            </div>
+         </div>
+         <div class="card">
+        
+            <img src=".\images\17.webp"class="card-img">
+            <div class="card-header">
+                <p>Womens Fashion</p>
+            
+            </div>   
+            <div class="card-body">
+           <div class="rating">
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+           </div>
+       <a button class="btn btn-dark"href=".\welcome.html">View Details</a></button>
+            </div>
+         </div>
+         <div class="card">
+        
+            <img src=".\images\21.webp"class="card-img">
+            <div class="card-header">
+                <p>Womens Fashion</p>
+            
+            </div>   
+            <div class="card-body">
+           <div class="rating">
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+           </div>
+            <a button class="btn btn-dark"href=".\welcome.html">View Details</a></button>
+            </div>
+         </div>
+         </div>
+
+         <div class="men1">
+
+    <div class="banner-title1">
+      <h1>Get -50% from
+      </h1> 
+        <h1>Summer Collection</h1>
+        <div>
+        <input type="date"min="2022-20-12"max="2022-25-12">
+        
+        <input type="time">
+    </div>
+    </div>
+  
+      </div>
+    <p>WHAT BUYS SAY</p>
+    <h2>latest buys review</h2>
+    <footer>
+        <div>
+              <span class="brand-footer">Shopping</span>
+              <div class="social-bar">
+              <span class="bi bi-facebook m-2"></span>
+              <span class="bi bi-twitter m-2"></span>
+              <span class="bi bi-instagram m-2"></span>
+              <span class="bi bi-youtube m-2"></span>
+          </div>
+          </div>
+          <div>
+              <div class="footer-title">SUPPORT</div>
+              <div>Contact Us</div>
+              <div>FAQS</div>
+              <div>Size Guide</div>
+              <div>Shipping&Returns</div>
+                    </div>
+                    <div>
+                      <div class="footer-title">SHOP</div>
+                    
+                      <div>Mens Shopping</div>
+                      <div>Womens Shopping</div>
+                      <div>Kids Shopping</div>
+                      <div>Discounts</div>
+                            </div>
+                            <div>
+                              <div class="footer-title">COMPANY</div>
+                              <div>Our Story</div>
+                              <div>Careers</div>
+                              <div>Teams&Conditions</div>
+                              <div>Privacy&Cookie policy</div>
+                                    </div>
+                                    <div>
+                                      <div class="footer-title">CONTACT</div>
+                                      <div>140-98675345</div>
+                                      <div>140-7683638292</div>
+                                      <div>help@shopping.com</div>
+                                    
+                                            </div>
+  
+      </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
